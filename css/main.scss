@@ -23,3 +23,5 @@ $grey-color-dark:  darken($grey-color, 25%);
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "base", "layout", "syntax-highlighting";
+// Import owl carousel from owl directory
+@import "/css/owl/owl.carousel.css", "/css/owl/owl.theme.css", "carousel";
