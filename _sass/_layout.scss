@@ -1,13 +1,23 @@
+/*
+ * Container
+ */
+.top-half {
+  @include outer-container;
+
+}
+
 /**
  * Site header
  */
 .site-header {
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+  // border-bottom: 1px solid $grey-color-light;
+  min-height: 56px;
+  @include span-columns(12);
 }
 
 .site-title {
   font-size: 1.5em;
+  margin-top: 0.75em;
 }
 
 .site-nav {
@@ -19,18 +29,20 @@
  */
 .site-footer {
   $base-spacing: 1em;
-  $footer-background: desaturate(darken($base-accent-color, 20), 30);
+  @include linear-gradient(#666, #006EFF);
+  // $footer-background: desaturate(darken($base-accent-color, 20), 30);
   $footer-color: white;
   $footer-link-color: transparentize($footer-color, .6);
   $footer-disclaimer-color: transparentize($footer-color, .6);
 
-  background: $footer-background;
+  // background: $footer-background;
   padding: $base-spacing*2 $gutter;
   width: 100%;
 
   .footer-logo {
     text-align: center;
     margin-bottom: 2em;
+    margin-top: 1em;
 
     img {
       height: 3em;
@@ -40,6 +52,7 @@
   .footer-links {
     @include clearfix;
     margin-bottom: $base-spacing;
+    margin-top: 1em;
 
     @include media($medium-screen) {
       @include shift(3);
@@ -48,6 +61,7 @@
 
   ul {
     margin-bottom: $base-spacing*2;
+    margin-left: $base-spacing;
 
     @include media($medium-screen) {
       @include span-columns(3);
@@ -101,30 +115,31 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+  padding: $spacing-unit 0;
+  @include span-columns(12);
 }
 
 .page-heading {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .post-list {
-    margin-left: 0;
-    list-style: none;
+  margin-left: 0;
+  list-style: none;
 
-    > li {
-        margin-bottom: $spacing-unit;
-    }
+  > li {
+    margin-bottom: $spacing-unit;
+  }
 }
 
 .post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
+  font-size: $small-font-size;
+  color: $grey-color;
 }
 
 .post-link {
-    display: block;
-    font-size: 24px;
+  display: block;
+  font-size: 24px;
 }
 
 
@@ -133,15 +148,15 @@
  * Posts
  */
 .post-header {
-    margin-bottom: $spacing-unit;
+  margin-bottom: $spacing-unit;
 }
 
 .post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
+  font-size: 42px;
+  letter-spacing: -1px;
+  line-height: 1;
 }
 
 .post-content {
-    margin-bottom: $spacing-unit;
+  margin-bottom: $spacing-unit;
 }
