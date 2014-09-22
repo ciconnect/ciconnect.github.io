@@ -1,9 +1,26 @@
-/*
+
+/**
  * Container
  */
-.top-half {
-  @include outer-container;
+.container {
+    @include outer-container;
+    // margin-right: auto;
+    // margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+}
 
+/*
+ * Inner container
+ */
+.site-header, .page-content {
+  @include span-columns(8);
+  @include shift(2);
+}
+
+.site-footer {
+  @include span-columns(12);
+  @include clearfix;
 }
 
 /**
@@ -12,7 +29,6 @@
 .site-header {
   // border-bottom: 1px solid $grey-color-light;
   min-height: 56px;
-  @include span-columns(12);
 }
 
 .site-title {
@@ -30,7 +46,7 @@
 .site-footer {
   $base-spacing: 1em;
   @include linear-gradient(#666, #006EFF);
-  // $footer-background: desaturate(darken($base-accent-color, 20), 30);
+  $footer-background: desaturate(darken($base-accent-color, 20), 30);
   $footer-color: white;
   $footer-link-color: transparentize($footer-color, .6);
   $footer-disclaimer-color: transparentize($footer-color, .6);
@@ -49,10 +65,9 @@
     }
   } 
 
-  .footer-links {
+.footer-links {
     @include clearfix;
     margin-bottom: $base-spacing;
-    margin-top: 1em;
 
     @include media($medium-screen) {
       @include shift(3);
@@ -61,7 +76,7 @@
 
   ul {
     margin-bottom: $base-spacing*2;
-    margin-left: $base-spacing;
+    margin-left: $base-spacing - 0.5em;
 
     @include media($medium-screen) {
       @include span-columns(3);
@@ -116,7 +131,6 @@
  */
 .page-content {
   padding: $spacing-unit 0;
-  @include span-columns(12);
 }
 
 .page-heading {

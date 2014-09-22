@@ -1,7 +1,12 @@
 ---
 ---
 @charset "utf-8";
-@import "bourbon/bourbon", "base/base", "neat/neat";
+@import 
+  "bourbon/bourbon",
+  "base/grid-settings",
+  "base/base", 
+  "neat/neat";
+
 @import url(http://fonts.googleapis.com/css?family=Lato);
 
 // Our variables
@@ -20,6 +25,8 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import "base", "layout", "syntax-highlighting";
+@import
+  "base",
+  "layout",
+  "syntax-highlighting"
+;
