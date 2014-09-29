@@ -23,17 +23,6 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
-/*
- * Logo styling
- */
-.site-brand, .site-title {
-    vertical-align: middle;
-    display: inline-block;
-    a { color: #333; }
-}
-
-
-
 
 
 /**
@@ -157,6 +146,11 @@ pre {
     }
 }
 
+
+
+
+
+
 .site-header {
     border-bottom: 0.5em solid #ccc;
     @include background(linear-gradient(#efefef, lighten(#333, 50%)) left repeat);
@@ -174,12 +168,23 @@ pre {
             color: #333;
         }
     }
+
+    .site-brand, .site-title {
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    .site-logo {
+        border: none;
+        outline: none;
+    }
 }
 
 .site-footer {
     .footer-logo {
         width: 50px;
         margin: auto auto;
+        border: 0px;
         @include border-radius(50%);
         @include background(linear-gradient(#efefef, lighten(#333, 50%)) left repeat);
         img {
