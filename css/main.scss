@@ -5,8 +5,7 @@
   "bourbon/bourbon",
   "base/grid-settings",
   "base/base", 
-  "neat/neat",
-  "/css/owl/owl.carousel.css", "/css/owl/owl.theme.css", "carousel"
+  "neat/neat"
 
 ;
 
@@ -35,20 +34,12 @@ html * {
   }
 }
 
-/*
- * Temporary graphics
- */
-
-@mixin border-radius($radius) {
-  @include border-top-radius($radius);
-  @include border-left-radius($radius);
-  @include border-right-radius($radius);
-  @include border-bottom-radius($radius);
-}
-
 @import
+  "mixins",
   "base",
   "layout",
   "syntax-highlighting",
-  "menu"
+  "menu",
+  "texture",
+  "/css/owl/owl.carousel.css", "/css/owl/owl.theme.css", "carousel"
 ;

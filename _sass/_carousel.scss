@@ -7,46 +7,44 @@ $green: #249131;
 $purple: #43186E;
 
 #carousel, .owl-carousel {
+  
   a:hover {
     text-decoration: none;
   }
-  .blood, .green, .purple, .blue {
+
+  .carousel-slide {
+    @include border-radius(10px);
     color: #ffffff;
-    height: 8em;
-    min-width: 640px;
-    display: inline-flex;
-    @extend %default-ul;
+    // display: inline-flex;
+
     ul {
-      margin-top: 1em;
-      display: block;
+      padding: 1em 1em;
       list-style-type: disc;
-      list-style-position: inside;
-      margin-before: 1em;
-      margin-after: 1em;
-      margin-start: 0;
-      margin-end: 0;
-      padding-start: 40px;
+      list-style-position: outside;
     }
+
     .slide-inner {
-      margin: auto 5px;
-      height: 8em;
-      min-width: 640px;
+
     }
   }
 
   .blood {
-    @include background(linear-gradient($blood, lighten($blood, 10%)) left repeat);
+    // @include bevelfold-edges($blood);
+    @include background(linear-gradient($blood, lighten($blood, 20%)) left repeat);
 
   }
   .green {
-    @include background(linear-gradient($green, lighten($green, 10%)) left repeat);
+    // @include bevelfold-edges($green);
+    @include background(linear-gradient($green, lighten($green, 20%)) left repeat);
 
   }
   .purple {
-    @include background(linear-gradient($purple, lighten($purple, 10%)) left repeat);
+    // @include bevelfold-edges($purple);
+    @include background(linear-gradient($purple, lighten($purple, 20%)) left repeat);
 
   }
   .blue {
-    @include background(linear-gradient($blue, lighten($blue, 10%)) left repeat);
+    // @include bevelfold-edges($blue);
+    @include background(linear-gradient($blue, lighten($blue, 20%)) left repeat);
   }
 }
