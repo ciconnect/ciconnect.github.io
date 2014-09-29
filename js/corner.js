@@ -1,2 +1,1 @@
-
-// $("#carousel > .carousel-slide").corner("notch top-right");
+// $(".carousel-slide").corner("bevelfold");

@@ -6,17 +6,18 @@ $blood: #8C1212;
 $green: #249131;
 $purple: #43186E;
 
-.owl-carousel {
+#carousel, .owl-carousel {
   a:hover {
     text-decoration: none;
   }
   .blood, .green, .purple, .blue {
     color: #ffffff;
-    height: em(150px);
+    height: 8em;
     min-width: 640px;
     display: inline-flex;
     @extend %default-ul;
     ul {
+      margin-top: 1em;
       display: block;
       list-style-type: disc;
       list-style-position: inside;
@@ -28,6 +29,7 @@ $purple: #43186E;
     }
     .slide-inner {
       margin: auto 5px;
+      height: 8em;
       min-width: 640px;
     }
   }
