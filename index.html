@@ -4,6 +4,14 @@ layout: default
 
 <div class="home">
 
+  <div class="intro-text">
+    <h2>Do more. Travel less. Be present.</h2>
+    <h4>Complete solutions for communications integration.</h4>
+    <p>{{ site.description }}
+    <a href="">Read more <span>&#187;</span></a></p>
+  </div>
+
+
   <div id="carousel" class="owl-carousel">
     <a href="/">  
       <div class="carousel-slide green">
@@ -26,25 +34,5 @@ layout: default
       </div>
     </a>
   </div>
-
-  <h1 class="page-heading">CI-Connect Blog</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <h6>
-          {{ post.short }}
-          <a href="{{ post.url | prepend: site.baseurl }}">&hellip; read more &raquo;</a>
-        </h6>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
