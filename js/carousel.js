@@ -5,7 +5,8 @@ $(document).ready(function() {
  
       navigation: true,
       slideSpeed: 300,
-      paginationSpeed: 400,
+      autoPlay: 5000,
+      paginationSpeed: 2000,
       singleItem: false,
       items: 2,
       itemsDesktop: true,
