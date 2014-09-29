@@ -4,8 +4,6 @@
  */
 .container {
     @include outer-container;
-    // margin-right: auto;
-    // margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
 }
@@ -13,7 +11,12 @@
 /*
  * Inner container
  */
-.site-header, .page-content {
+.site-header {
+  white-space: nowrap;
+  @include span-columns(12);
+}
+
+.page-content {
   @include span-columns(8);
   @include shift(2);
 }
@@ -32,7 +35,7 @@
 }
 
 .site-title {
-  font-size: 1.5em;
+  // font-size: 1.5em;
   margin-top: 0.75em;
 }
 

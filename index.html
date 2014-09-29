@@ -5,11 +5,46 @@ layout: default
 <div class="home">
 
   <div id="carousel" class="owl-carousel">
-    <div class="carousel-1"><img src="http://placehold.it/960x400"></div>
-    <div><img src="http://placehold.it/960x400"></div>
-    <div><img src="http://placehold.it/960x400"></div>
-    <div><img src="http://placehold.it/960x400"></div>
-    <div><img src="http://placehold.it/960x400"></div>
+    <a href="/">  
+      <div class="carousel-slide green">
+        <div class="slide-inner">{% include carousel/vc.html %}</div>
+      </div>
+    </a>
+    <a href="/">  
+      <div class="carousel-slide blue">
+        <div class="slide-inner">{% include carousel/av.html %}</div>
+      </div>
+    </a>
+    <a href="/">  
+      <div class="carousel-slide purple">
+        <div class="slide-inner">{% include carousel/nc.html %}</div>
+      </div>
+    </a>
+    <a href="/">  
+      <div class="carousel-slide blood">
+        <div class="slide-inner">{% include carousel/hs.html %}</div>
+      </div>
+    </a>
   </div>
+
+  <h1 class="page-heading">CI-Connect Blog</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <h6>
+          {{ post.short }}
+          <a href="{{ post.url | prepend: site.baseurl }}">&hellip; read more &raquo;</a>
+        </h6>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

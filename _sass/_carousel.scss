@@ -1,2 +1,50 @@
-#carousel {
+/*
+ * Colour scheme
+ */
+$blue: #062C57;
+$blood: #8C1212;
+$green: #249131;
+$purple: #43186E;
+
+.owl-carousel {
+  a:hover {
+    text-decoration: none;
+  }
+  .blood, .green, .purple, .blue {
+    color: #ffffff;
+    height: em(150px);
+    min-width: 640px;
+    display: inline-flex;
+    @extend %default-ul;
+    ul {
+      display: block;
+      list-style-type: disc;
+      list-style-position: inside;
+      margin-before: 1em;
+      margin-after: 1em;
+      margin-start: 0;
+      margin-end: 0;
+      padding-start: 40px;
+    }
+    .slide-inner {
+      margin: auto 5px;
+      min-width: 640px;
+    }
+  }
+
+  .blood {
+    @include background(linear-gradient($blood, lighten($blood, 10%)) left repeat);
+
+  }
+  .green {
+    @include background(linear-gradient($green, lighten($green, 10%)) left repeat);
+
+  }
+  .purple {
+    @include background(linear-gradient($purple, lighten($purple, 10%)) left repeat);
+
+  }
+  .blue {
+    @include background(linear-gradient($blue, lighten($blue, 10%)) left repeat);
+  }
 }

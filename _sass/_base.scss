@@ -156,3 +156,35 @@ pre {
         padding-left: 0;
     }
 }
+
+.site-header {
+    border-bottom: 0.5em solid #ccc;
+    @include background(linear-gradient(#efefef, lighten(#333, 50%)) left repeat);
+
+    .site-brand {
+        margin: 0 1em;
+    }
+
+    .site-title {
+        a, a:hover {
+            color: #333;
+            text-decoration: none;
+        }
+        .title-slogan {
+            color: #333;
+        }
+    }
+}
+
+.site-footer {
+    .footer-logo {
+        width: 50px;
+        margin: auto auto;
+        @include border-radius(50%);
+        @include background(linear-gradient(#efefef, lighten(#333, 50%)) left repeat);
+        img {
+            width: 35px;
+        }
+
+    }
+}

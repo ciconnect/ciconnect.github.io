@@ -10,10 +10,10 @@
 
 ;
 
-@import url("http://fonts.googleapis.com/css?family=Raleway|Lato");
+@import url("http://fonts.googleapis.com/css?family=Raleway");
 
 // Our variables
-$base-font-family: "Raleway", "Lato", Helvetica, Arial, sans-serif;
+$base-font-family: Raleway, Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -28,11 +28,6 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-@import
-  "base",
-  "layout",
-  "syntax-highlighting"
-;
 
 html * {
   h1,h2,h3,h4,h5,h6,li,dd,p {
@@ -51,6 +46,9 @@ html * {
   @include border-bottom-radius($radius);
 }
 
-.placeholder-logo {
-  @include border-radius(50%);
-}
+@import
+  "base",
+  "layout",
+  "syntax-highlighting",
+  "menu"
+;
