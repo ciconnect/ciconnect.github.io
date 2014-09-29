@@ -1,3 +1,14 @@
+@mixin default-media {
+  @include media($small-to-medium) {
+    @include span-columns(10);
+    @include shift(1);
+  }
+  @include media($medium-screen-up) {
+    @include span-columns(8);
+    @include shift(2);
+  }
+}
+
 
 /**
  * Container
@@ -14,11 +25,14 @@
 .site-header {
   white-space: nowrap;
   @include span-columns(12);
+
+  .site-banner {
+  @include default-media;
+  }
 }
 
 .page-content {
-  @include span-columns(8);
-  @include shift(2);
+  @include default-media;
 }
 
 .site-footer {
