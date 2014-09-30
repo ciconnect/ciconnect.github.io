@@ -38,7 +38,7 @@ layout: default
     </div>
 
     <div class="enquiry-form">
-      <form action="http://getsimpleform.com/messages?form_api_token=e2979c5ab1778ff2ac6f32f70ffec70b" method="post">
+      <form action="http://getsimpleform.com/messages?form_api_token=7ec54017f36cfdf8d33a57997d400b6f" method="post">
         <input type='hidden' name='redirect_to' value='{{ site.url }}/contact/thankyou.html' />
         <fieldset>
           <legend>Your details</legend>
@@ -54,8 +54,11 @@ layout: default
         </fieldset>
         <fieldset>
           <legend>Your enquiry</legend>
+          <label>Subject
+            <input type='text' name='subject' required></input>
+          </label>
           <label>Message
-            <textarea name='message' required cols='5'></textarea>
+            <textarea name='body' required cols='5'></textarea>
           </label>
         </fieldset>
         <input type='submit' value='Submit' />
