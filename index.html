@@ -1,5 +1,6 @@
 ---
 layout: default
+post_limit: 3
 ---
 
 <div class="home">
@@ -8,7 +9,7 @@ layout: default
     <h2>Do more. Travel less. Be present.</h2>
     <h4>Complete solutions for communications integration.</h4>
     <p>{{ site.description }}
-    <a href="/about">Read more <span>&#187;</span></a></p>
+    <a href="/about">&hellip; read more &raquo;</a></p>
   </div>
 
 
@@ -34,5 +35,7 @@ layout: default
       </div>
     </a>
   </div>
+
+  {% include posts/index.html %}
 
 </div>
