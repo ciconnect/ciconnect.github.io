@@ -37,7 +37,6 @@
 
 .site-footer {
   @include span-columns(12);
-  @include clearfix;
 }
 
 /**
@@ -190,4 +189,76 @@
 
 .post-content {
   margin-bottom: $spacing-unit;
+}
+
+
+.contact-page {
+
+  .contact-address {
+    // @include span-columns(12);
+    .contact-map {
+
+      margin-bottom: 1rem;
+
+      @include media(max-width 767px) { // small
+        @include span-columns(12);
+      }
+
+      @include media(min-width 768px) { // large 
+        @include span-columns(6 of 12);
+        // @include omega;
+      }
+    }
+
+    .address {
+
+      @include media(max-width 767px) { // small
+        @include span-columns(12);
+      }
+
+      @include media(min-width 768px) { // large    
+        @include span-columns(6 of 12);
+        // @include shift(1);
+        @include omega;
+      }
+    }
+
+  }
+
+  .contact-form {
+    @include span-columns(12);
+
+    .enquiry-form {
+
+      @include media(max-width 767px) { // small
+        @include span-columns(12);
+      }
+
+      @include media(min-width 768px) { // large    
+        @include span-columns(6 of 12);
+        // @include shift(6);
+        @include omega;
+      }
+    }
+
+    .enquiry-note {
+
+      @include media(max-width 767px) { // small
+        @include span-columns(12);
+      }
+
+      @include media(min-width 768px) { // large    
+        @include span-columns(6 of 12);
+      }
+    }
+  }
+
+}
+
+
+.about-page {
+  .about-history {
+
+    @include span-columns(12);
+  }
 }

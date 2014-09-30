@@ -150,29 +150,31 @@ pre {
 .site-header {
     border-bottom: 0.5em solid #ccc;
     @include background(linear-gradient(#efefef, lighten(#333, 50%)) left repeat);
+    .site-banner {
 
-    .site-brand {
-        margin: 0 1em;
-    }
-
-    .site-title {
-        a, a:hover {
-            color: #333;
-            text-decoration: none;
+        .site-brand {
+            margin: 0 1em;
         }
-        .title-slogan {
-            color: #333;
+
+        .site-title {
+            a, a:hover {
+                color: #333;
+                text-decoration: none;
+            }
+            .title-slogan {
+                color: #333;
+            }
         }
-    }
 
-    .site-brand, .site-title {
-        vertical-align: middle;
-        display: inline-block;
-    }
+        .site-brand, .site-title {
+            vertical-align: middle;
+            display: inline-block;
+        }
 
-    .site-logo {
-        border: none;
-        outline: none;
+        .site-logo {
+            border: none;
+            outline: none;
+        }
     }
 }
 
@@ -188,4 +190,23 @@ pre {
         }
 
     }
+}
+
+.contact-page {
+
+    .google-maps {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+    
 }
