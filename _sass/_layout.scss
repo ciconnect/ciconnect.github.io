@@ -192,73 +192,49 @@
 }
 
 
+/*
+ * About page
+ */
+.about-page {
+
+  .about-history {
+
+  }
+}
+
+/*
+ * Contact page
+ */
 .contact-page {
 
-  .contact-address {
-    // @include span-columns(12);
-    .contact-map {
+  .col1, .col2 {
 
-      margin-bottom: 1rem;
+    @include media(min-width em(768px)) {
+      @include span-columns(6 of 12);
+    }
+  }
 
-      @include media(max-width 767px) { // small
-        @include span-columns(12);
-      }
+  .col1 {
 
-      @include media(min-width 768px) { // large 
-        @include span-columns(6 of 12);
-        // @include omega;
-      }
+    .map {
+
+      margin-bottom: 2rem;
     }
 
     .address {
 
-      @include media(max-width 767px) { // small
-        @include span-columns(12);
-      }
-
-      @include media(min-width 768px) { // large    
-        @include span-columns(6 of 12);
-        // @include shift(1);
-        @include omega;
-      }
-    }
-
-  }
-
-  .contact-form {
-    @include span-columns(12);
-
-    .enquiry-form {
-
-      @include media(max-width 767px) { // small
-        @include span-columns(12);
-      }
-
-      @include media(min-width 768px) { // large    
-        @include span-columns(6 of 12);
-        // @include shift(6);
-        @include omega;
-      }
-    }
-
-    .enquiry-note {
-
-      @include media(max-width 767px) { // small
-        @include span-columns(12);
-      }
-
-      @include media(min-width 768px) { // large    
-        @include span-columns(6 of 12);
-      }
     }
   }
 
-}
+  .col2 {
 
+    .note {
+      
+      margin-bottom: 2rem;
+    }
 
-.about-page {
-  .about-history {
+    .form {
 
-    @include span-columns(12);
+    }
   }
 }
