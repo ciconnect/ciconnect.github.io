@@ -1,1 +1,1 @@
-// $(".carousel-slide").corner("bevelfold");
+$("h2").corner("bevelfold");

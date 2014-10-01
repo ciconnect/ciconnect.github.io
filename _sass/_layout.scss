@@ -1,175 +1,45 @@
-@mixin default-media {
-  @include media($small-to-medium) {
-    @include span-columns(10);
-    @include shift(1);
-  }
-  @include media($medium-screen-up) {
-    @include span-columns(8);
-    @include shift(2);
-  }
-}
-
-
-/**
- * Container
- */
 .container {
     @include outer-container;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
 }
 
-/*
- * Inner container
- */
-.site-header {
-  white-space: nowrap;
-  @include span-columns(12);
-
-  .site-banner {
-  @include default-media;
-  }
-}
-
 .page-content {
-  @include default-media;
+    @include default-media;
 }
 
 .site-footer {
-  @include span-columns(12);
+    @include span-columns(12);
 }
-
-/**
- * Site header
- */
-.site-header {
-  // border-bottom: 1px solid $grey-color-light;
-  min-height: 56px;
-}
-
-.site-title {
-  // font-size: 1.5em;
-  margin-top: 0.75em;
-}
-
-.site-nav {
-
-}
-
-/*
- * Site footer
- */
-.site-footer {
-  $base-spacing: 1em;
-  @include linear-gradient(#666, #006EFF);
-  $footer-background: desaturate(darken($base-accent-color, 20), 30);
-  $footer-color: white;
-  $footer-link-color: transparentize($footer-color, .6);
-  $footer-disclaimer-color: transparentize($footer-color, .6);
-
-  // background: $footer-background;
-  padding: $base-spacing*2 $gutter;
-  width: 100%;
-
-  .footer-logo {
-    text-align: center;
-    margin-bottom: 2em;
-    margin-top: 1em;
-
-    img {
-      height: 3em;
-    }
-  } 
-
-.footer-links {
-    @include clearfix;
-    margin-bottom: $base-spacing;
-
-    @include media($medium-screen) {
-      @include shift(3);
-    }
-  }
-
-  ul {
-    margin-bottom: $base-spacing*2;
-    margin-left: $base-spacing - 0.5em;
-
-    @include media($medium-screen) {
-      @include span-columns(3);
-      @include omega(3n);
-      @include clearfix;
-    }
-  }
-
-  li {
-    text-align: center;
-
-    @include media($medium-screen) {
-      text-align: left;
-    }
-  }
-
-  li a {
-    color: $footer-link-color;
-
-    &:hover {
-      color: transparentize($footer-color, 0);
-    }
-  }
-
-  li h3 {
-    color: $footer-color;
-    font-size: 1em;
-    font-weight: 800;
-    margin-bottom: .4em;
-  }  
-
-  hr {
-    border: 1px solid transparentize($footer-disclaimer-color, .3);
-    margin: 0 auto $base-spacing;
-    width: 12em;
-  }
-
-  p {
-    color: $footer-disclaimer-color;
-    font-size: .9em;
-    line-height: 1.5em;
-    margin: auto;
-    max-width: 35em;
-    text-align: center;
-  }
-}
-
-
 
 /**
  * Page content
  */
 .page-content {
-  padding: $spacing-unit 0;
+    padding: $spacing-unit 0;
 }
 
 .page-heading {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 .post-list {
-  margin-left: 0;
-  list-style: none;
+    margin-left: 0;
+    list-style: none;
 
-  > li {
-    margin-bottom: $spacing-unit;
-  }
+    > li {
+        margin-bottom: $spacing-unit;
+    }
 }
 
 .post-meta {
-  font-size: $small-font-size;
-  color: $grey-color;
+    font-size: $small-font-size;
+    color: $grey-color;
 }
 
 .post-link {
-  display: block;
-  font-size: 24px;
+    display: block;
+    font-size: 24px;
 }
 
 
@@ -178,17 +48,17 @@
  * Posts
  */
 .post-header {
-  margin-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit;
 }
 
 .post-title {
-  font-size: 42px;
-  letter-spacing: -1px;
-  line-height: 1;
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
 }
 
 .post-content {
-  margin-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit;
 }
 
 
@@ -197,9 +67,9 @@
  */
 .about-page {
 
-  .about-history {
+    .about-history {
 
-  }
+    }
 }
 
 /*
@@ -207,34 +77,43 @@
  */
 .contact-page {
 
-  .col1, .col2 {
+    .col1, .col2 {
 
-    @include media(min-width em(768px)) {
-      @include span-columns(6 of 12);
-    }
-  }
-
-  .col1 {
-
-    .map {
-
-      margin-bottom: 2rem;
+        @include media(min-width em(768px)) {
+            @include span-columns(6 of 12);
+        }
     }
 
-    .address {
+    .col1 {
 
+        .map {
+
+            margin-bottom: 2rem;
+        }
+
+        .address {
+
+        }
     }
-  }
 
-  .col2 {
+    .col2 {
 
-    .note {
-      
-      margin-bottom: 2rem;
+        .note {
+            
+            margin-bottom: 2rem;
+        }
+
+        .form {
+
+        }
     }
+}
 
-    .form {
+.site-header {
 
+    .banner {
+        @include span-columns(12);
+        @include default-media;
+    
     }
-  }
 }

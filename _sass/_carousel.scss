@@ -24,7 +24,7 @@ $pur: #43186E;
 
     .type {
       padding: 1rem 0rem 0rem;
-      margin: 0rem 0rem 0rem 1rem;
+      margin: 0rem 0rem 0rem 1.5rem;
     }
 
     ul li {
@@ -34,19 +34,20 @@ $pur: #43186E;
 
   .red {
     @include background(linear-gradient($red, lighten($red, 20%)) left repeat);
-
   }
+
   .gre {
     @include background(linear-gradient($gre, lighten($gre, 20%)) left repeat);
-
   }
+
   .pur {
     @include background(linear-gradient($pur, lighten($pur, 20%)) left repeat);
-
   }
+
   .blu {
     @include background(linear-gradient($blu, lighten($blu, 20%)) left repeat);
   }
+  
 }
 
 #testimos-slider {

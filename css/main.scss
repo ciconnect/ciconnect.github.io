@@ -5,11 +5,26 @@
   "bourbon/bourbon",
   "base/grid-settings",
   "base/base", 
-  "neat/neat"
+  "neat/neat",
+  "mixins"
 
 ;
 
 @import url("http://fonts.googleapis.com/css?family=Raleway");
+
+@font-face {
+  font-family: Nevis;
+  src: url("/fonts/nevis.ttf");
+}
+@font-face {
+  font-family: Grotesk;
+  src: url("/fonts/grotesk.ttf");
+}
+@font-face {
+  font-family: Grotesk-Bold;
+  src: url("/fonts/groteskbold.ttf");
+}
+
 
 // Our variables
 $base-font-family: Raleway, Helvetica, Arial, sans-serif;
@@ -29,13 +44,30 @@ $grey-color-dark:  darken($grey-color, 25%);
 
 
 html * {
-  h1,h2,h3,h4,h5,h6,li,dd,p {
+  h1,h2 {
+    font-family: Raleway, sans-serif;
+    letter-spacing: em(1px);
+  }
+  h1 {
+    font-size: 1.8rem;
+    color: #666;
+  }
+  h2 {
+    font-size: 1.5rem;
+    color: #666;
+    background-color: #e0e0e0;
+    padding: 1rem;
+    margin: 1rem 0rem 1rem 0rem;
+  }
+  h3,h4,h5,h6,li,dd,p {
     font-family: $base-font-family; 
+  }
+  p {
+    padding: 0rem 1rem;
   }
 }
 
 @import
-  "mixins",
   "base",
   "layout",
   "syntax-highlighting",

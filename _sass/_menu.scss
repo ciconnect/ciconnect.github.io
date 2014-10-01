@@ -11,9 +11,10 @@ $sliding-menu-color-hover: #fff;
   cursor: pointer;
   font-size: $base-font-size;
   margin-bottom: $base-line-height;
-  position: fixed;
-  right: 1em;
-  top: 1em;
+  position: relative;
+  // right: 1em;
+  // top: 1em;
+  float: right;
 
   outline: none;
 
