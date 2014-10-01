@@ -12,30 +12,10 @@ post_limit: 3
       <a href="/about">&hellip; read more &raquo;</a></p>
   </div>
 
-
-  <div id="carousel" class="owl-carousel">
-    <a href="/">  
-      <div class="carousel-slide green">
-        <div class="slide-inner">{% include carousel/vc.html %}</div>
-      </div>
-    </a>
-    <a href="/">  
-      <div class="carousel-slide blue">
-        <div class="slide-inner">{% include carousel/av.html %}</div>
-      </div>
-    </a>
-    <a href="/">  
-      <div class="carousel-slide purple">
-        <div class="slide-inner">{% include carousel/nc.html %}</div>
-      </div>
-    </a>
-    <a href="/">  
-      <div class="carousel-slide blood">
-        <div class="slide-inner">{% include carousel/hs.html %}</div>
-      </div>
-    </a>
-  </div>
+  {% include carousel/services.html %}
 
   {% include posts/index.html %}
+
+  {% include carousel/testimonials.html %}
 
 </div>

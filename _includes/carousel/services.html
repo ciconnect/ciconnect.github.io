@@ -1,0 +1,13 @@
+<div id="services-slider" class="owl-carousel">
+  {% for service in site.data.services %}
+  <a href="{{ service.page }}">  
+    <div class="carousel-slide {{ service.class }}">
+      <ul>
+        {% for item in service.list %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </a>
+  {% endfor %}
+</div>

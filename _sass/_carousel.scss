@@ -1,12 +1,12 @@
 /*
  * Colour scheme
  */
-$blue: #062C57;
-$blood: #8C1212;
-$green: #249131;
-$purple: #43186E;
+$blu: #062C57;
+$red: #8C1212;
+$gre: #249131;
+$pur: #43186E;
 
-#carousel, .owl-carousel {
+#services-slider {
   
   a:hover {
     text-decoration: none;
@@ -15,36 +15,33 @@ $purple: #43186E;
   .carousel-slide {
     @include border-radius(10px);
     color: #ffffff;
-    // display: inline-flex;
 
     ul {
       padding: 1em 1em;
       list-style-type: disc;
       list-style-position: outside;
     }
-
-    .slide-inner {
-
-    }
   }
 
-  .blood {
-    // @include bevelfold-edges($blood);
-    @include background(linear-gradient($blood, lighten($blood, 20%)) left repeat);
+  .red {
+    @include background(linear-gradient($red, lighten($red, 20%)) left repeat);
 
   }
-  .green {
-    // @include bevelfold-edges($green);
-    @include background(linear-gradient($green, lighten($green, 20%)) left repeat);
+  .gre {
+    @include background(linear-gradient($gre, lighten($gre, 20%)) left repeat);
 
   }
-  .purple {
-    // @include bevelfold-edges($purple);
-    @include background(linear-gradient($purple, lighten($purple, 20%)) left repeat);
+  .pur {
+    @include background(linear-gradient($pur, lighten($pur, 20%)) left repeat);
 
   }
-  .blue {
-    // @include bevelfold-edges($blue);
-    @include background(linear-gradient($blue, lighten($blue, 20%)) left repeat);
+  .blu {
+    @include background(linear-gradient($blu, lighten($blu, 20%)) left repeat);
+  }
+}
+
+#testimos-slider {
+  img {
+    max-width: em(150px);
   }
 }

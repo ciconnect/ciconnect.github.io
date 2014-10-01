@@ -1,0 +1,40 @@
+- 
+  name: Video conferencing
+  list: [
+    "Meeting rooms",
+    "Desktop",
+    "Mobility",
+    "Recording & streaming"
+    ]
+  class: gre
+  page: javascript:void(0)
+- 
+  name: Audio visual
+  list: [
+    "Displays",
+    "IPTV",
+    "Digital signage",
+    "Control & switching"
+    ]
+  class: blu
+  page: javascript:void(0)
+- 
+  name: Network connectivity
+  list: [
+    "Fixed-line services",
+    "Wireless",
+    "Customer wifi",
+    "Networked AV"
+    ]
+  class: pur
+  page: javascript:void(0)
+- 
+  name: Hosting services
+  list: [
+    "Virtual meeting rooms",
+    "Audio conferencing",
+    "SIP services",
+    "Recording & streaming"
+    ]
+  class: red
+  page: javascript:void(0)
