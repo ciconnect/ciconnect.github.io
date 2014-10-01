@@ -1,7 +1,9 @@
+<h3>Our services</h3>
 <div id="services-slider" class="owl-carousel">
   {% for service in site.data.services %}
   <a href="{{ service.page }}">  
     <div class="carousel-slide {{ service.class }}">
+      <h4 class="type">{{ service.name }}</h4>      
       <ul>
         {% for item in service.list %}
           <li>{{ item }}</li>

@@ -8,14 +8,13 @@ post_limit: 3
   <div class="intro-text">
     <h2>Do more. Travel less. Be present.</h2>
     <h4>Complete solutions for communications integration.</h4>
-    <p>{{ site.data.company.description | newline_to_br }}
-      <a href="/about">&hellip; read more &raquo;</a></p>
+    <p>
+      {{ site.data.company.description | newline_to_br }}
+      <a href="/about">&hellip; read more &raquo;</a>
+    </p>
+
+    {% include carousel/services.html %}
   </div>
-
-  {% include carousel/services.html %}
-
-  {% include posts/index.html %}
-
   {% include carousel/testimonials.html %}
 
 </div>

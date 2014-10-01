@@ -21,6 +21,15 @@ $pur: #43186E;
       list-style-type: disc;
       list-style-position: outside;
     }
+
+    .type {
+      padding: 1rem 0rem 0rem;
+      margin: 0rem 0rem 0rem 1rem;
+    }
+
+    ul li {
+      font-size: 1.1rem;
+    }
   }
 
   .red {
@@ -41,6 +50,7 @@ $pur: #43186E;
 }
 
 #testimos-slider {
+
   img {
     max-width: em(150px);
   }
