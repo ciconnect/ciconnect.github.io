@@ -19,7 +19,7 @@ body {
     font-weight: 300;
     color: $text-color;
     background-color: $background-color;
-    @include linear-gradient(#eee, #fff);
+    @include background(linear-gradient(#eee, #fff) no-repeat);
     -webkit-text-size-adjust: 100%;
 }
 

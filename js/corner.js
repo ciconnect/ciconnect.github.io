@@ -1,1 +1,1 @@
-$("h2").corner("bevelfold");
+// $("h2").corner("bevelfold");

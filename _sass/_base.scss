@@ -1,19 +1,24 @@
 @import "basic";
 
+
+img {
+    border: none;
+    outline: none;
+}
+
 /*
  * Site header
  */
 .site-header {
     min-height: 7em;
-    border-bottom: 0.5em solid #ccc;
+    border-bottom: 0.5em solid lighten(#999, 10%);
     @include background(linear-gradient(#efefef, lighten(#333, 60%)) left repeat);
     
     .banner {
         white-space: nowrap;
 
         .logo {
-            border: none;
-            outline: none;
+
         }
 
         .title {
@@ -21,7 +26,6 @@
             margin-top: 0.55em;
             a {
                 color: #333;
-                text-decoration: none;
             }
         }
 
@@ -31,6 +35,7 @@
         }
 
         .logo, .title {
+            text-decoration: none;
             vertical-align: middle;
             display: inline-block;
         }
@@ -53,12 +58,14 @@
     width: 100%;
     .footer-logo {
         width: 50px;
-        margin: auto auto;
+        margin: 1rem auto 1rem auto;
+        padding: 3px;
         border: 0px;
         @include border-radius(50%);
         @include background(linear-gradient(#efefef, lighten(#333, 50%)) left repeat);
         img {
-            width: 35px;
+            width: 45px;
+            padding: 2px;
         }
 
     } 

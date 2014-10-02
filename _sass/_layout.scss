@@ -112,7 +112,6 @@
 .site-header {
 
     .banner {
-        @include span-columns(12);
         @include default-media;
     
     }
