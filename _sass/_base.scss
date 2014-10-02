@@ -24,8 +24,9 @@ img {
         .title {
             font-size: 2rem;
             margin-top: 0.55em;
-            a {
+            a, a:after, a:hover {
                 color: #333;
+                text-decoration: none;
             }
         }
 
