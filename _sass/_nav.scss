@@ -14,7 +14,7 @@ nav.navigation {
   $navigation-active-link-color: transparentize(white, 0.5);
   $navigation-submenu-padding: 1em;
   $navigation-submenu-width: 12em;
-  $horizontal-bar-mode: $large-screen;
+  $horizontal-bar-mode: 768px; //$large-screen;
 
   background-color: $navigation-background;
   border-bottom: 1px solid darken($navigation-background, 10);
@@ -65,7 +65,7 @@ nav.navigation {
     text-transform: uppercase;
 
     @include media ($horizontal-bar-mode) {
-      // display: none;
+      display: none;
     }
 
     &:hover {
