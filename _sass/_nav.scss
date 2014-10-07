@@ -45,8 +45,12 @@ nav.navigation {
     h1 {
       float: left;
       margin: .8rem;
-      @include media(max-width 370px) {
+      @include media(max-width 324px) {
         display: none;
+      }
+      @include media(min-width 325px max-width 370px) {
+        font-size: 1.2rem;
+        margin: .9em;
       }
     }
   }
