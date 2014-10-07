@@ -16,7 +16,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ciconnect.github.io" # the base hostname & protocol for your site
 timezone: Europe/London
 
-
+copyright: CI-Connect Ltd. Some rights reserved
 # Build settings
 markdown: kramdown
 highlighter: pygments

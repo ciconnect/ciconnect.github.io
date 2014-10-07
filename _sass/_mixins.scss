@@ -9,6 +9,16 @@
   }
 }
 
+@mixin columns-media {
+  @include media($small-to-medium) {
+    @include span-columns(10);
+    @include shift(1);
+  }
+  @include media($medium-screen-up) {
+    @include span-columns(6 of 12);
+  } 
+}
+
 @mixin border-radius($radius) {
   @include border-top-radius($radius);
   @include border-left-radius($radius);

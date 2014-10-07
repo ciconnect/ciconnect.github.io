@@ -1,5 +1,5 @@
 - 
-  name: Video conferencing
+  name: Video
   list: [
     "Meeting rooms",
     "Desktop",
@@ -19,7 +19,7 @@
   class: blu
   page: javascript:void(0)
 - 
-  name: Network connectivity
+  name: Networks
   list: [
     "Fixed-line services",
     "Wireless",
@@ -27,9 +27,9 @@
     "Networked AV"
     ]
   class: pur
-  page: javascript:void(0)
+  page: /networks
 - 
-  name: Hosting services
+  name: Hosting
   list: [
     "Virtual meeting rooms",
     "Audio conferencing",

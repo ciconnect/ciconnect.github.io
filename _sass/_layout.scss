@@ -6,6 +6,12 @@
 
 .page-content {
     @include default-media;
+    .col1 {
+        @include columns-media;
+    }
+    .col2 {
+        @include columns-media;
+    }
 }
 
 .site-footer {
@@ -106,13 +112,5 @@
         .form {
 
         }
-    }
-}
-
-.site-header {
-
-    .banner {
-        @include default-media;
-    
     }
 }

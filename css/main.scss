@@ -14,9 +14,9 @@
 
 // Our variables
 $base-font-family: Raleway, sans-serif;
-$base-font-size:   16px;
+$base-font-size:   18px;
 $small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-line-height: 1.8;
 
 $spacing-unit:     30px;
 
@@ -58,5 +58,6 @@ html * {
   "syntax-highlighting",
   "menu",
   "texture",
-  "/css/owl/owl.carousel.css", "/css/owl/owl.theme.css", "carousel"
+  "/css/owl/owl.carousel.css", "/css/owl/owl.theme.css", "carousel",
+  "nav"
 ;

@@ -1,29 +1,18 @@
-
-<button type="button" class="js-menu-trigger sliding-menu-button">
-  <img src="/images/menu.png" alt="Menu Icon">
-</button>
-
-<nav class="js-menu sliding-menu-content">
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/blog">Blog</a></li>
-    <li><a href="javascript:void(0)">Services</a>
-      <ul>
-        <li><a href="javascript:void(0)">Video</a></li>
-        <li><a href="javascript:void(0)">Audio</a></li>
-        <li><a href="javascript:void(0)">Network</a></li>
-        <li><a href="javascript:void(0)">Hosting</a></li>
+<nav class="navigation">
+  <div class="navigation-wrapper">
+    <a href="{{ site.baseurl }}/" class="logo">
+      <img src="/images/logo.svg" />
+      <h1>{{ site.title }}</h1>
+    </a>
+    <a href="" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+    <div class="nav">
+      <ul id="navigation-menu">
+        <li class="nav-link"><a href="/">Home</a></li>
+        <li class="nav-link"><a href="/blog">Blog</a></li>
+        <li class="nav-link"><a href="/contact">Contact</a></li>
+        <li class="nav-link"><a href="/services">Services</a></li>
+        <li class="nav-link"><a href="/about">About</a></li>
       </ul>
-    </li>
-    <li><a href="/contact">Contact</a></li>
-    <li><a href="/about">About us</a>
-<!--       <ul>
-        <li><a href="javascript:void(0)">History</a></li>
-        <li><a href="javascript:void(0)">Team</a></li>
-        <li><a href="javascript:void(0)">Social</a></li>        
-      </ul> -->
-    </li>
-  </ul>
+    </div>
+  </div>
 </nav>
-
-<div class="js-menu-screen menu-screen"></div>

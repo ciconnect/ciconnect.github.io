@@ -7,43 +7,6 @@ img {
 }
 
 /*
- * Site header
- */
-.site-header {
-    min-height: 7em;
-    border-bottom: 0.5em solid lighten(#999, 10%);
-    @include background(linear-gradient(#efefef, lighten(#333, 60%)) left repeat);
-    
-    .banner {
-        white-space: nowrap;
-
-        .logo {
-
-        }
-
-        .title {
-            font-size: 2rem;
-            margin-top: 0.55em;
-            a, a:after, a:hover {
-                color: #333;
-                text-decoration: none;
-            }
-        }
-
-        .slogan {
-            font-size: 0.75rem;
-            color: #333;
-        }
-
-        .logo, .title {
-            text-decoration: none;
-            vertical-align: middle;
-            display: inline-block;
-        }
-    }
-}
-
-/*
  * Site footer
  */
 .site-footer {
