@@ -36,7 +36,7 @@ nav.navigation {
     padding-left: $navigation-padding;
     padding-right: 2em;
 
-    img {
+    img, object {
       max-height: $navigation-height;
       padding: .8em 0;
       float: left;
