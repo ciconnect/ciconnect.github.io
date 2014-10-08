@@ -9,7 +9,7 @@ $(document).ready(function() {
       pagination: false,
       paginationSpeed: 1500,
       singleItem: false,
-      itemsCustom: [[0, 1], [768, 2]],
+      itemsCustom: [[0, 1], [780, 2]],
       itemsScaleUp: true,
       autoHeight: true
  
