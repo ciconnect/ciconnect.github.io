@@ -6,7 +6,11 @@
         <ul>
           <li>
             <a href="{{ item.url }}" target="_blank">
-              <img src="{{ site.baseurl }}/images/logos/{{ item.logo }}" />
+              {% if item.svg %}
+                <object data="/images/logos/{{ item.svg }}" type="image/svg+xml"></object>
+              {% else %}
+                <img src="/images/logos/{{ item.logo }}" />
+              {% endif %}
             </a>
           </li>
           <li>
