@@ -1,6 +1,5 @@
 nav.navigation {
   @include background(linear-gradient(#efefef, lighten(#333, 60%)) left repeat);
-  @include outer-container;
   $navigation-padding: 1em;
   $navigation-background: #ccc;
   $navigation-color: transparentize(black, 0.3);
@@ -22,9 +21,13 @@ nav.navigation {
   width: 100%;
   z-index: 999;
 
-  .navigation-wrapper {
+
+  .navigation-container {
     @include clearfix;
-    // @include outer-container;
+    @include outer-container;    
+  }
+  
+  .navigation-wrapper {
     @include span-columns(12);
     position: relative;
     z-index: 9999;

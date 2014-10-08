@@ -84,6 +84,7 @@
         @include media(min-width em(768px)) {
             @include span-columns(6 of 12);
         }
+        
     }
 
     .col1 {
