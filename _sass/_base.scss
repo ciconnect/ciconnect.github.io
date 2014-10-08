@@ -26,10 +26,13 @@ img {
         margin: 1rem auto 1rem auto;
         padding: 3px;
         border: 0px;
+        position: relative; // centering the logo
+        left: .3rem; // centering the logo
         @include border-radius(50%);
         @include background(linear-gradient(#efefef, lighten(#333, 50%)) left repeat);
         object {
             width: 45px;
+            height: 45px;
             padding: 2px;
         }
 
