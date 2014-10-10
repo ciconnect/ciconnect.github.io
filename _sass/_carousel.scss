@@ -53,6 +53,17 @@ $pur: #43186E;
 #testimos-slider {
 
   img, object {
-    max-width: 200px;
+    @include media(max-width 399px) {
+      width: 90%;
+      max-width: 250px;
+    }
+    @include media(min-width 400px max-width 767px) {
+      width: 75%;
+      max-width: 250px;
+    }
+    @include media(min-width 768px) {
+      width: 33%;
+      max-width: 250px;
+    }
   }
 }
