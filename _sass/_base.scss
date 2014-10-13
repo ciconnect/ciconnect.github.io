@@ -138,3 +138,9 @@ body {
         @include scale-fonts(1.375rem);
     }
 }
+
+.testimonials-page {
+    ul {
+        margin: 1rem 0 3rem 0;
+    }
+}

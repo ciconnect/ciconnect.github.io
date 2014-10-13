@@ -46,7 +46,7 @@ $pur: #43186E;
   
 }
 
-#testimos-slider {
+#testimos-slider, .testimonials-page {
 
   img, object {
     @include media(max-width 399px) {

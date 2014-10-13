@@ -5,13 +5,13 @@
       <div class="slide-inner testimonial">
         <ul>
           <li>
-            <a href="{{ item.url }}" target="_blank">
+            <!-- <a href="{{ item.url }}" target="_blank"> -->
               {% if item.svg %}
                 <object data="/images/logos/{{ item.svg }}" type="image/svg+xml"></object>
               {% else %}
                 <img src="/images/logos/{{ item.logo }}" />
               {% endif %}
-            </a>
+            <!-- </a> -->
           </li>
           <li>
             <h4>{{ item.person }}</h4>

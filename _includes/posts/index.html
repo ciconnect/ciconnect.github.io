@@ -7,7 +7,7 @@
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h2>
       <h6>
-        {{ post.content | truncatewords: 50, ' &hellip; ' }}
+        {{ post.content | truncatewords: 30, ' &hellip; ' }}
         <a href="{{ post.url | prepend: site.baseurl }}">read more &raquo;</a>
       </h6>
     </li>

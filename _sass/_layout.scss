@@ -6,9 +6,12 @@
 .page-content {
     @include outer-container;
 
-    padding: $spacing-unit 1rem;
+    padding: 3rem;
     @include media($small-screen-up) {
-        padding: $spacing-unit 0.5rem;
+        padding: 2rem;
+        @include media(max-width 400px) {
+            padding: 1rem;
+        }
     }
 }
 
