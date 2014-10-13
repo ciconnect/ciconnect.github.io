@@ -1,6 +1,9 @@
 @mixin columns-media {
   @include media($small-screen-up) {
-    @include span-columns(12);
+    @include media(min-width 500px) {
+      @include span-columns(10 of 12);
+      @include shift(1);
+    }
   }
   @include media($medium-screen-up) {
     @include span-columns(6 of 12);
