@@ -29,11 +29,11 @@ $pur: #43186E;
   }
 
   .red {
-    @include texture(45deg, $red, lighten($red, 20%), 2);
+    @include texture(45deg, $red, lighten($red, 20%), 3);
   }
 
   .gre {
-    @include texture(90deg, $gre, lighten($gre, 20%), 2);
+    @include texture(90deg, $gre, lighten($gre, 20%), 3);
   }
 
   .pur {
@@ -41,7 +41,7 @@ $pur: #43186E;
   }
 
   .blu {
-    @include texture(180deg, $blu, lighten($blu, 20%), 4);
+    @include texture(180deg, $blu, lighten($blu, 20%), 3);
   }
   
 }

@@ -51,3 +51,18 @@
   }
   font-weight: 400;
 }
+
+@mixin texture($gradient-angle, $bg-color-1, $bg-color-2, $texture-number) { 
+  $texture-list: 
+    "tile.png"
+    "inflicted.png"
+    "bright-squares.png"
+    "light-honeycomb.png"
+    "light-wool.png"
+    "zig-zag.png"
+    "white-diamond.png";
+
+  @include background(url("/images/textures/#{nth($texture-list, $texture-number)}"), 
+    linear-gradient($gradient-angle, $bg-color-1, $bg-color-2), 
+    center no-repeat $bg-color-1 scroll);
+}
