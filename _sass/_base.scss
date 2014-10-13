@@ -11,8 +11,8 @@ img {
  */
 .site-footer {
     $base-spacing: 1em;
-
-    @include texture(180deg, #666, #006EFF, 4);
+    @include linear-gradient(185deg, #333, #006EFF);
+    // @include texture(180deg, #666, #006EFF, 4);
     $footer-background: desaturate(darken($base-accent-color, 20), 30);
     $footer-color: white;
     $footer-link-color: transparentize($footer-color, .6);
