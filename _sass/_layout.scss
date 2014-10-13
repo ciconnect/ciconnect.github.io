@@ -1,74 +1,21 @@
-.container {
-    @include outer-container;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-}
-
-.page-content {
-    @include default-media;
-    .col1 {
-        @include columns-media;
-    }
-    .col2 {
-        @include columns-media;
-    }
-}
-
-.site-footer {
-    @include span-columns(12);
-}
+@import "layouts/posts";
 
 /**
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
-}
+    @include outer-container;
 
-.post-list {
-    margin-left: 0;
-    list-style: none;
-
-    > li {
-        margin-bottom: $spacing-unit;
+    padding: $spacing-unit 1rem;
+    @include media($small-screen-up) {
+        padding: $spacing-unit 0.5rem;
     }
 }
-
-.post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
-}
-
-.post-link {
-    display: block;
-    font-size: 24px;
-}
-
-
-
-/**
- * Posts
- */
-.post-header {
-    margin-bottom: $spacing-unit;
-}
-
-.post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-}
-
-.post-content {
-    margin-bottom: $spacing-unit;
-}
-
 
 /*
  * About page
  */
 .about-page {
-
     .about-history {
 
     }
@@ -78,36 +25,7 @@
  * Contact page
  */
 .contact-page {
-
     .col1, .col2 {
-
-        @include media(min-width em(768px)) {
-            @include span-columns(6 of 12);
-        }
-        
-    }
-
-    .col1 {
-
-        .map {
-
-            margin-bottom: 2rem;
-        }
-
-        .address {
-
-        }
-    }
-
-    .col2 {
-
-        .note {
-            
-            margin-bottom: 2rem;
-        }
-
-        .form {
-
-        }
+        @include columns-media;
     }
 }

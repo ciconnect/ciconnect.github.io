@@ -1,22 +1,13 @@
-@mixin default-media {
-  @include media($small-to-medium) {
-    @include span-columns(10);
-    @include shift(1);
-  }
-  @include media($medium-screen-up) {
-    @include span-columns(8);
-    @include shift(2);
-  }
-}
-
 @mixin columns-media {
-  @include media($small-to-medium) {
-    @include span-columns(10);
-    @include shift(1);
+  @include media($small-screen-up) {
+    @include span-columns(12);
   }
   @include media($medium-screen-up) {
     @include span-columns(6 of 12);
-  } 
+  }
+  @include media($large-screen-up) {
+    @include span-columns(6 of 12);
+  }
 }
 
 @mixin border-radius($radius) {
