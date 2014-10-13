@@ -29,19 +29,19 @@ $pur: #43186E;
   }
 
   .red {
-    @include background(linear-gradient($red, lighten($red, 20%)) left repeat);
+    @include texture(45deg, $red, lighten($red, 20%), 2);
   }
 
   .gre {
-    @include background(linear-gradient($gre, lighten($gre, 20%)) left repeat);
+    @include texture(90deg, $gre, lighten($gre, 20%), 2);
   }
 
   .pur {
-    @include background(linear-gradient($pur, lighten($pur, 20%)) left repeat);
+    @include texture(135deg, $pur, lighten($pur, 20%), 3);
   }
 
   .blu {
-    @include background(linear-gradient($blu, lighten($blu, 20%)) left repeat);
+    @include texture(180deg, $blu, lighten($blu, 20%), 4);
   }
   
 }
