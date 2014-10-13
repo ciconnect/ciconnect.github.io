@@ -124,3 +124,16 @@ img {
         margin-bottom: 2rem;
     }
 }
+
+
+body {
+    @include media($small-screen-up) {
+        @include scale-fonts(1.125rem); 
+    }
+    @include media($medium-screen-up) {
+        @include scale-fonts(1.250rem);
+    }
+    @include media($large-screen-up) {
+        @include scale-fonts(1.375rem);
+    }
+}

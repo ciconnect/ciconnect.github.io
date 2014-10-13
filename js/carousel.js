@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
  
   $("#services-slider").owlCarousel({
@@ -9,7 +8,7 @@ $(document).ready(function() {
       pagination: false,
       paginationSpeed: 1500,
       singleItem: false,
-      itemsCustom: [[0, 1], [780, 2]],
+      itemsCustom: [[0, 1], [560, 2], [960, 3]],
       itemsScaleUp: true,
       autoHeight: true
  
