@@ -1,5 +1,7 @@
 ---
 layout: default
+title: About us
+permalink: /about/
 ---
 
 <div class="about-history">

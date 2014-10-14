@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Contact us
+permalink: /contact/
 ---
 
 
@@ -9,7 +11,7 @@ layout: default
 
     <div class="form">
       <form action="http://getsimpleform.com/messages?form_api_token=7ec54017f36cfdf8d33a57997d400b6f" method="post">
-        <input type='hidden' name='redirect_to' value='{{ site.url }}/contact/thankyou.html' />
+        <input type='hidden' name='redirect_to' value='{{ site.url }}/contact/receipt' />
         <fieldset>
           <legend>Your details</legend>
           <label>Name
@@ -44,7 +46,7 @@ layout: default
 
     <div class="note">
       <h3>Contact us</h3>
-      <h5>If you have any questions about our services, would like to arrange a demo or request a call-back at an appropriate time, feel free to send us an enquiry.</h5>
+      <p>If you have any questions about our services, would like to arrange a demo or request a call-back at an appropriate time, feel free to send us an enquiry.</p>
     </div>
 
     <div class="map">
@@ -55,18 +57,18 @@ layout: default
 
     <div class="address">
       <h3 id="address">Address</h3>
-      <h5>
+      <p>
         {{ site.address }}
-      </h5>
+      </p>
       <h3 id="phone">Telephone</h3>
-      <h5>{{ site.telephone }}</h5>
+      <p>{{ site.telephone }}</p>
 
       <h3 id="email">Email</h3>
-      <h6>
+      <p>
         <a href="mailto:{{ site.email }}">
           {{ site.email }}
         </a>
-      </h6>
+      </p>
     </div>
 
   </div>

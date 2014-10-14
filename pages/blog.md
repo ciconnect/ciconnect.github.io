@@ -1,5 +1,7 @@
 ---
 layout: default
+title: CI-Connect Blog
+permalink: /blog/
 post_limit: 10
 ---
 
