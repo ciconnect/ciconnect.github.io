@@ -63,12 +63,11 @@ nav.navigation {
     color: $navigation-color;
     display: block;
     float: right;
-    font-family: $sans-serif;
-    font-weight: 700;
     line-height: $navigation-height;
-    margin: 0;
-    padding: .25em 1em 0 0;
-    text-transform: uppercase;
+    padding: .15rem .5rem 0 0;
+    .fa-navicon {
+      top: -0.125rem;
+    }
 
     @include media ($horizontal-bar-mode) {
       display: none;
