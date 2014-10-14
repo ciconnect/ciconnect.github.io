@@ -48,14 +48,41 @@ img {
         }
     }
 
-    ul {
-        margin-bottom: $base-spacing*2;
+    ul.level-1, ul.level-2 {
         margin-left: $base-spacing - 0.5em;
+    }
 
+    ul.level-1 {
+        margin-bottom: $base-spacing*2;
         @include media($medium-screen) {
             @include span-columns(3);
             @include omega(3n);
             @include clearfix;
+        }
+    }
+
+    ul.level-2 {
+        margin-left: - 0.5em;
+        li {
+            display: inline-block;
+        }
+        li:last-child {
+            margin-left: .25em;
+            @include media($small-screen-up) {
+                display: none;
+            }
+            display: inline-block;
+            .fa-facebook, .fa-facebook-o {
+                // color: #dfe3ee;
+            }
+
+            .fa-twitter, .fa-twitter-o {
+                // color: #c0deed;
+            }
+
+            .fa-paper-plane, .fa-paper-plane-o {
+                // color: #efefef;
+            }
         }
     }
 
