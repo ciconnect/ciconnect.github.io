@@ -48,11 +48,8 @@ img {
         }
     }
 
-    ul.level-1, ul.level-2 {
+    ul {
         margin-left: $base-spacing - 0.5em;
-    }
-
-    ul.level-1 {
         margin-bottom: $base-spacing*2;
         @include media($medium-screen) {
             @include span-columns(3);
@@ -61,27 +58,32 @@ img {
         }
     }
 
-    ul.level-2 {
-        margin-left: - 0.5em;
-        li {
-            display: inline-block;
+    .icon {
+        .blog {
+            & > i {
+                color: darken(#ccc, 10%);
+            }
+            i:last-child {
+                color: #efefef;
+            }
         }
-        li:last-child {
-            margin-left: .25em;
-            @include media($small-screen-up) {
-                display: none;
+        .facebook {
+            & > i {
+                color: $facebook;
+                &:hover {
+                    color: lighten($facebook, 10%);
+                }
             }
-            display: inline-block;
-            .fa-facebook, .fa-facebook-o {
-                // color: #dfe3ee;
+            i:last-child {
+                color: #efefef;
             }
-
-            .fa-twitter, .fa-twitter-o {
-                // color: #c0deed;
+        }
+        .twitter {
+            & > i {
+                color: $twitter;
             }
-
-            .fa-paper-plane, .fa-paper-plane-o {
-                // color: #efefef;
+            i:last-child {
+                color: #efefef;
             }
         }
     }
