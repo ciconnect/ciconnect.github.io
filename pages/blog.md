@@ -1,13 +1,13 @@
 ---
 layout: default
-title: CI-Connect Blog
+title: Blog
 permalink: /blog/
 post_limit: 10
 ---
 
 <div class="blog">
 
-  <h1>CI-Connect Blog</h1>
+  <h2>Our blog</h2>
 
   {% include posts/index.html %}
 

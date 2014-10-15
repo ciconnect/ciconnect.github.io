@@ -1,0 +1,15 @@
+- 
+  url: /
+  tag: Home
+-
+  url: /blog
+  tag: Blog
+-
+  url: /services
+  tag: Services
+-
+  url: /contact
+  tag: Contact
+-
+  url: /about
+  tag: About

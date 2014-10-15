@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: page
 title: Testimonials
+heading: Our testimonials
 permalink: /testimonials/
 ---
 

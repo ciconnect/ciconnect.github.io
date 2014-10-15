@@ -1,6 +1,7 @@
 ---
-layout: default
-title: Contact us
+layout: page
+title: Contact
+heading: Contact us
 permalink: /contact/
 ---
 
@@ -45,7 +46,6 @@ permalink: /contact/
   <div class="col2">
 
     <div class="note">
-      <h3>Contact us</h3>
       <p>If you have any questions about our services, would like to arrange a demo or request a call-back at an appropriate time, feel free to send us an enquiry.</p>
     </div>
 

@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: page
 title: Services
-header: Our services
+heading: Our services
 permalink: /services/
 ---
 
