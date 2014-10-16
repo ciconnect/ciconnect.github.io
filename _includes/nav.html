@@ -15,10 +15,10 @@
       </a>
       <div class="nav">
         <ul id="navigation-menu">
-        {% assign url = page.url %}
         {% for link in site.data.links %}
-          <li class="nav-link{% if url == link.url %}class=" active"{% endif %}">
-            <a href="{{ link.url }}">{{ link.tag }}</a>
+        {% assign url = page.url | remove: 'index.html' %}
+          <li class="nav-link">
+            <a {% if url == link.url %}class="active"{% endif %} href="{{ link.url }}">{{ link.tag }}</a>
           </li>
         {% endfor %}
         </ul>
@@ -26,4 +26,3 @@
     </div>
   </div>
 </nav>
-

@@ -112,10 +112,20 @@ nav.navigation {
     display: block;
     line-height: $navigation-height;
     overflow: hidden;
-    padding-right: .8em;
     text-align: right;
     width: 100%;
     z-index: 9999;
+    a { 
+      padding: 0 1rem;
+    }
+
+    .active {
+      @include media($horizontal-bar-mode) {
+        @include background(linear-gradient(#666, lighten(#666, 20%)) left repeat);
+        color: white;
+        padding: 0 1rem;
+      }
+    }
 
     @include media ($horizontal-bar-mode) {
       background: transparent;

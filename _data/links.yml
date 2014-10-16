@@ -2,14 +2,14 @@
   url: /
   tag: Home
 -
-  url: /blog
+  url: /blog/
   tag: Blog
 -
-  url: /services
+  url: /services/
   tag: Services
 -
-  url: /contact
+  url: /contact/
   tag: Contact
 -
-  url: /about
+  url: /about/
   tag: About
